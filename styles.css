@@ -1,0 +1,354 @@
+/* Global content. */
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+	margin: 0px;
+	padding: 0px;
+    background-color: #111;
+    color: #F1D4D4;
+	font-family: Grenze, Geneva, Tahoma, sans-serif;
+}
+
+.highlight {
+    color: #eb6123;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #eb6123;
+}
+
+a {
+    color: #df84c2;
+}
+
+a:active {
+    background-color: #7e0b95;
+}
+
+/* Card article */
+.card {
+    margin: 10px;
+    padding: 15px;
+    padding-bottom: 30px;
+    width: 250px;
+    font-size: 16pt;
+    border: 1px solid #C060A1;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #1D1D1D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card-image {
+    border-radius: 11px;
+    max-width: 200px;
+}
+
+.card-name {
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.submit {
+    font-size: 11pt;
+    font-weight: bold;
+    margin-left: 5px;
+    background-color: #1D1D1D;
+    border: 1px solid #eb6123;
+    border-radius: 5px;
+    color: #F1D4D4;
+    text-align: center;
+    padding: 5px 0px;
+    width: 40px;
+}
+
+.submit:hover {
+    border-color: #e2662c;
+    background-color: #444;
+    color: white;
+}
+
+.increment-button {
+    font-size: 11pt;
+    font-weight: bold;
+    background-color: #1D1D1D;
+    border: 1px solid #C060A1;
+    width: 25px;
+    border-radius: 5px;
+    color: #F1D4D4;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.increment-button:hover {
+    border-color: #eb6123;
+    background-color: #444;
+    color: white;
+}
+
+.quantity-input {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    font-size: 11pt;
+    font-weight: bold;
+    width: 40px;
+    background-color: #1D1D1D;
+    border: 1px solid #C060A1;
+    border-radius: 5px;
+    color: #F1D4D4;
+    text-align: center;
+    margin: 0px 5px;
+    padding: 5px 0px;
+    /* appearance: none; */
+}
+
+.card-area {
+    margin: 25px auto;
+    padding: 15px;
+    width: 75%;
+    font-size: 16pt;
+    border: 1px solid #C060A1;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Narrow content. */
+@media (max-width: 800px) {
+    header {
+        margin: 0px auto;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: linear-gradient(to right, rgba(106, 9, 125, 1), rgba(106, 9, 125, 0)), url("images/galaxy-banner.png");
+        width: 75%;
+        height: 90px;
+        border-radius: 5px;
+        position: fixed;
+    }
+
+    body {
+        margin-top: 120px;
+    }
+    
+    header h1 {
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-left: 5%;
+        font-size: 24pt;
+    }
+    
+    header h2 {
+        display: none;
+    }
+
+    div#cart {
+        padding: 15px;
+        width: 75%;
+        font-size: 16pt;
+        border: 1px solid #C060A1;
+        border-radius: 5px;
+        text-align: center;
+        position: fixed;
+        top: 115px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #1D1D1D;
+    }
+
+    div#wrapper {
+        margin-top: 200px;
+    }
+}
+
+/* Wide content. */
+@media (min-width: 800px) {
+    header {
+        margin: 0px auto;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: linear-gradient(to right, rgba(106, 9, 125, 1), rgba(106, 9, 125, 0)), url("images/galaxy-banner.png");
+        width: 75%;
+        height: 150px;
+        border-radius: 5px;
+        position: fixed;
+    }
+
+    body {
+        margin-top: 210px;
+    }
+
+    header h1 {
+        margin: 0px;
+        padding-top: 0px;
+        padding-left: 5%;
+        font-size: 50pt;
+    }
+
+    header h2 {
+        margin: 0px;
+        font-size: 26pt;
+        padding-left:5%;
+        font-style: italic;
+        position: relative;
+        top: -20px;
+    }
+
+    div#cart {
+        padding: 15px;
+        width: 75%;
+        font-size: 16pt;
+        border: 1px solid #C060A1;
+        border-radius: 5px;
+        text-align: center;
+        position: fixed;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #1D1D1D;
+    }
+    
+    div#wrapper {
+        margin-top: 285px;
+    }
+}
+
+div#main-navigation {
+    margin: -10px auto;
+    background-image: linear-gradient(to right, #7e0b95, #000);
+    height: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+div#main-navigation nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+div#main-navigation nav ul li {
+    margin: 0px 15px;
+}
+
+div#main-navigation nav ul li a {
+    color: #F1D4D4;
+    font-size: 16pt;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+div#main-navigation nav ul li a:hover {
+    background-color: #eb6123;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Main content. */
+
+div#main-text {
+    margin: 25px auto;
+    padding: 15px;
+    width: 75%;
+    font-size: 16pt;
+    border: 1px solid #C060A1;
+    border-radius: 5px;
+}
+
+section#promotion-introduction {
+    width: 100%;
+    text-align: center;
+}
+
+/* Cart content. */
+
+
+div#cart:hover {
+    background-color: #222;
+    border-color: #eb6123;
+}
+
+/* Contact content. */
+div#contact-area {
+    margin: 25px auto;
+    padding: 15px;
+    width: 75%;
+    font-size: 16pt;
+    border: 1px solid #C060A1;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.error {
+    color: red;
+}
+
+input:focus {
+    background-color: #444;
+    color: white;
+}
+textarea:focus {
+    background-color: #444;
+    color: white;
+}
+
+input,
+textarea {
+    background-color: #1D1D1D;
+    color: #F1D4D4;
+}
+
+/* Footer content. */
+
+footer {
+    margin: 25px auto;
+    padding: 15px;
+    width: 75%;
+    font-size: 12pt;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav ul {
+	display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer nav ul li {
+    margin: auto 15px;
+}

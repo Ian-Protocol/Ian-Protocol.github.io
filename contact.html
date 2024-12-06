@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="validate.js"></script>
+    <title>Magic Shop</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <h1>Magic Shop</h1>
+            <h2>Gather the spells you want for Commander.</h2>
+        </div>
+        <div id="main-navigation">
+            <nav aria-label="main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html"><span class="underline">Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="main-text">
+            Please leave any comments or suggestions here! I can't promise that you're not talking into a void.
+        </div>
+        <div id="contact-area">
+            <form id="contactform" action="/index.html" method="post">
+                <fieldset id="contact-info">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input id="name" name="name" type="text">
+                            <p class="contact error" id="name_error">* Required field</p>
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number:</label>
+                            <input id="phone" name="phone" type="text">
+                            <p class="contact error" id="phone_error">* Required field</p>
+                            <p class="contact error" id="phoneFormat_error">* Enter a valid phone number.</p>
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input id="email" name="email" type="text">
+                            <p class="contact error" id="email_error">* Required field</p>
+                            <p class="contact error" id="emailFormat_error">* Enter a valid email address.</p>
+                        </li>
+                    </ul>
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="5" cols="42"></textarea>
+                </fieldset>
+                <div id="buttons">
+                    <button type="submit" id="submitButton">Submit</button>
+                    <button type="reset" id="clearButton">Clear</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        Magic Shop 2024 - All Unrights Unreserved.
+    </footer>
+</body>
+</html>
